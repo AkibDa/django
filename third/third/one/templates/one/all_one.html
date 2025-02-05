@@ -6,4 +6,18 @@ All for one
 
 {% block content %}
 <h1>All for one</h1>
+
+{% for one in one  %}
+  <div class="one-item">
+    <img src="{{one.image.url}}" alt="">
+    <h3>{{one.name}}</h3>
+    <a href="{% url 'one_detail' one.id %}">
+      <button
+      type = "button">
+      {{one.type}} - {{one.id}}
+      </button>
+    </a>
+  </div>
+{% {% endfor %} %}
+
 {% endblock %}
