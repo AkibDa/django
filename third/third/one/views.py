@@ -9,3 +9,6 @@ def all_one(request):
 def one_detail(request, one_id):
   one = get_object_or_404(OneVarity, pk=one_id)
   return render(request, 'one/one_details.html', {'one':one})
+
+def one_store_view(request):
+  return render(request, 'one/one_stores.html')
