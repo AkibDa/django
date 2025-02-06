@@ -5,6 +5,7 @@ Django | Tweet
 {% endblock %}
 
 {% block content %}
+
 <h1 class="text-center mt-4">Welcome to Django | Tweet project</h1>
 
 <a class="btn btn-primary mb-4" href="{% url 'tweet_create' %}">Create a tweet</a>
@@ -19,7 +20,7 @@ Django | Tweet
       <a href="{% url 'tweet_delete' tweet.id %}" class="btn btn-danger">Delete</a>
     </div>
   </div>
-  {% endfor %}ß
+  {% endfor %}
 </div>
 
 {% endblock %}
